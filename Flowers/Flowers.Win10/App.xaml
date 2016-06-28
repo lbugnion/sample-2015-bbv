@@ -1,0 +1,35 @@
+﻿<Application x:Class="Flowers.Win10.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModel="using:Flowers.Data.ViewModel"
+             xmlns:system="using:System"
+             RequestedTheme="Light">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/MiscStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <viewModel:ViewModelLocator x:Key="Locator" />
+
+            <SolidColorBrush x:Key="HighlightBrush"
+                             Color="#FFFA28D4" />
+
+            <Style x:Key="IconStyle"
+                   TargetType="Image">
+                <Setter Property="Stretch"
+                        Value="None" />
+                <Setter Property="HorizontalAlignment"
+                        Value="Right" />
+                <Setter Property="VerticalAlignment"
+                        Value="Top" />
+                <Setter Property="Margin"
+                        Value="0,20,24,0" />
+                <Setter Property="Source"
+                        Value="Assets/Icon.png" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

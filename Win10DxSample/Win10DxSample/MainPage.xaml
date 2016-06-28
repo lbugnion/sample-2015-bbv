@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="Win10DxSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Win10DxSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:wpDxBandSampleNative="using:WpDxBandSampleNative"
+    mc:Ignorable="d">
+
+    <Grid Background="Black"
+          x:Name="Root">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <wpDxBandSampleNative:D3DPanel x:Name="DxPanel"
+                                       Grid.RowSpan="3" />
+
+        <TextBlock HorizontalAlignment="Center"
+                   Margin="10"
+                   Foreground="Yellow"
+                   FontWeight="Bold"
+                   FontSize="18"
+                   IsHitTestVisible="False"
+                   x:Name="StatusText" />
+
+        <Border Grid.Row="2"
+                Background="White"
+                HorizontalAlignment="Stretch">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+
+                <RadioButton GroupName="Options"
+                             Content="Band"
+                             x:Name="BandRadioButton"
+                             Checked="OptionChanged" />
+
+                <RadioButton GroupName="Options"
+                             Content="Touch"
+                             IsChecked="True"
+                             x:Name="TouchRadioButton"
+                             Checked="OptionChanged" />
+            </StackPanel>
+        </Border>
+
+        <Image Source="Assets/Logo_Bug-pink.png"
+               Grid.RowSpan="3"
+               Margin="10"
+               Height="100"
+               HorizontalAlignment="Left"
+               Stretch="Uniform"
+               IsHitTestVisible="False"
+               Opacity="0.6" />
+    </Grid>
+</Page>

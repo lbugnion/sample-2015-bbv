@@ -1,0 +1,225 @@
+<UserSettings><ApplicationIdentity version="14.0"/><ToolsOptions/><Category name="Environment_Group" RegisteredName="Environment_Group"><Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package"><PropertyValue name="ShowAllTabs">false</PropertyValue><PropertyValue name="Version">1</PropertyValue><PropertyValue name="DeletedTabCount">0</PropertyValue><PropertyValue name="Tab0.Name">Other Layouts</PropertyValue><PropertyValue name="Tab0.View">0</PropertyValue><PropertyValue name="Tab0.UseDefaultName">true</PropertyValue><PropertyValue name="Tab0.RecordType">1</PropertyValue><PropertyValue name="Tab0.Position">36</PropertyValue><PropertyValue name="Tab1.Name">Time &amp; Date</PropertyValue><PropertyValue name="Tab1.View">0</PropertyValue><PropertyValue name="Tab1.UseDefaultName">true</PropertyValue><PropertyValue name="Tab1.RecordType">1</PropertyValue><PropertyValue name="Tab1.Position">37</PropertyValue><PropertyValue name="Tab2.Name">Text Fields</PropertyValue><PropertyValue name="Tab2.View">0</PropertyValue><PropertyValue name="Tab2.UseDefaultName">true</PropertyValue><PropertyValue name="Tab2.RecordType">1</PropertyValue><PropertyValue name="Tab2.Position">38</PropertyValue><PropertyValue name="Tab3.Name">Form Widgets</PropertyValue><PropertyValue name="Tab3.View">0</PropertyValue><PropertyValue name="Tab3.UseDefaultName">true</PropertyValue><PropertyValue name="Tab3.RecordType">1</PropertyValue><PropertyValue name="Tab3.Position">39</PropertyValue><PropertyValue name="Tab4.Name">Advanced</PropertyValue><PropertyValue name="Tab4.View">0</PropertyValue><PropertyValue name="Tab4.UseDefaultName">true</PropertyValue><PropertyValue name="Tab4.RecordType">1</PropertyValue><PropertyValue name="Tab4.Position">40</PropertyValue><PropertyValue name="Tab5.Name">Composite</PropertyValue><PropertyValue name="Tab5.View">0</PropertyValue><PropertyValue name="Tab5.UseDefaultName">true</PropertyValue><PropertyValue name="Tab5.RecordType">1</PropertyValue><PropertyValue name="Tab5.Position">41</PropertyValue><PropertyValue name="Tab6.Name">Layouts</PropertyValue><PropertyValue name="Tab6.View">0</PropertyValue><PropertyValue name="Tab6.UseDefaultName">true</PropertyValue><PropertyValue name="Tab6.RecordType">1</PropertyValue><PropertyValue name="Tab6.Position">42</PropertyValue><PropertyValue name="Tab7.Name">Images &amp; Media</PropertyValue><PropertyValue name="Tab7.View">0</PropertyValue><PropertyValue name="Tab7.UseDefaultName">true</PropertyValue><PropertyValue name="Tab7.RecordType">1</PropertyValue><PropertyValue name="Tab7.Position">43</PropertyValue><PropertyValue name="Tab8.Name">Other Widgets</PropertyValue><PropertyValue name="Tab8.View">0</PropertyValue><PropertyValue name="Tab8.UseDefaultName">true</PropertyValue><PropertyValue name="Tab8.RecordType">1</PropertyValue><PropertyValue name="Tab8.Position">44</PropertyValue><PropertyValue name="Tab9.ID">Control Flow</PropertyValue><PropertyValue name="Tab9.Name">Control Flow</PropertyValue><PropertyValue name="Tab9.View">0</PropertyValue><PropertyValue name="Tab9.UseDefaultName">true</PropertyValue><PropertyValue name="Tab9.RecordType">4</PropertyValue><PropertyValue name="Tab9.Position">45</PropertyValue><PropertyValue name="TabCount">10</PropertyValue><PropertyValue name="DeletedItemCount">0</PropertyValue><PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item0.ID">383C4C7B18036E4E4CB3CF32A7AE9FA0</PropertyValue><PropertyValue name="Item0.Name">---- MainViewModel</PropertyValue><PropertyValue name="Item0.UseDefaultName">true</PropertyValue><PropertyValue name="Item0.Tab">General</PropertyValue><PropertyValue name="Item0.TabID">General</PropertyValue><PropertyValue name="Item0.OriginalTabID">General</PropertyValue><PropertyValue name="Item0.OriginalTab">General</PropertyValue><PropertyValue name="Item0.RecordType">1</PropertyValue><PropertyValue name="Item0.Data">        public ObservableCollection&lt;FlowerViewModel&gt; Flowers
+        {
+            get;
+            private set;
+        }
+
+</PropertyValue><PropertyValue name="Item0.Position">1</PropertyValue><PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item1.ID">383C4C7B18036E4E4CB3CF32A7AE9FA0</PropertyValue><PropertyValue name="Item1.Name">Flowers</PropertyValue><PropertyValue name="Item1.UseDefaultName">true</PropertyValue><PropertyValue name="Item1.Tab">General</PropertyValue><PropertyValue name="Item1.TabID">General</PropertyValue><PropertyValue name="Item1.OriginalTabID">General</PropertyValue><PropertyValue name="Item1.OriginalTab">General</PropertyValue><PropertyValue name="Item1.RecordType">1</PropertyValue><PropertyValue name="Item1.Data">        public ObservableCollection&lt;FlowerViewModel&gt; Flowers
+        {
+            get;
+            private set;
+        }
+
+</PropertyValue><PropertyValue name="Item1.Position">2</PropertyValue><PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item2.ID">5EDE75C6073F51C5CE9BF73A36D6D34A</PropertyValue><PropertyValue name="Item2.Name">LastLoaded</PropertyValue><PropertyValue name="Item2.UseDefaultName">true</PropertyValue><PropertyValue name="Item2.Tab">General</PropertyValue><PropertyValue name="Item2.TabID">General</PropertyValue><PropertyValue name="Item2.OriginalTabID">General</PropertyValue><PropertyValue name="Item2.OriginalTab">General</PropertyValue><PropertyValue name="Item2.RecordType">1</PropertyValue><PropertyValue name="Item2.Data">        public const string LastLoadedPropertyName = "LastLoaded";
+        private DateTime _lastLoaded = DateTime.MinValue;
+
+        public DateTime LastLoaded
+        {
+            get
+            {
+                return _lastLoaded;
+            }
+            set
+            {
+                if (Set(() =&gt; LastLoaded, ref _lastLoaded, value))
+                {
+                    RaisePropertyChanged(() =&gt; LastLoadedFormatted);
+                }
+            }
+        }
+
+</PropertyValue><PropertyValue name="Item2.Position">3</PropertyValue><PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item3.ID">1B5C461986B7EB9AC901319224957B58</PropertyValue><PropertyValue name="Item3.Name">LastLoadedFormatted</PropertyValue><PropertyValue name="Item3.UseDefaultName">true</PropertyValue><PropertyValue name="Item3.Tab">General</PropertyValue><PropertyValue name="Item3.TabID">General</PropertyValue><PropertyValue name="Item3.OriginalTabID">General</PropertyValue><PropertyValue name="Item3.OriginalTab">General</PropertyValue><PropertyValue name="Item3.RecordType">1</PropertyValue><PropertyValue name="Item3.Data">        public string LastLoadedFormatted
+        {
+            get
+            {
+                return _isLoading
+                    ? "Loading..."
+                    : "Last loaded: " + (LastLoaded == DateTime.MinValue ? "Never" : LastLoaded.ToString());
+            }
+        }
+
+</PropertyValue><PropertyValue name="Item3.Position">4</PropertyValue><PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item4.ID">0605A29CAC73E18007232861A688CDF8</PropertyValue><PropertyValue name="Item4.Name">services</PropertyValue><PropertyValue name="Item4.UseDefaultName">true</PropertyValue><PropertyValue name="Item4.Tab">General</PropertyValue><PropertyValue name="Item4.TabID">General</PropertyValue><PropertyValue name="Item4.OriginalTabID">General</PropertyValue><PropertyValue name="Item4.OriginalTab">General</PropertyValue><PropertyValue name="Item4.RecordType">1</PropertyValue><PropertyValue name="Item4.Data">        private readonly IFlowersService _flowersService;
+        private readonly INavigationService _navigationService;
+</PropertyValue><PropertyValue name="Item4.Position">5</PropertyValue><PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item5.ID">51EBD0AFE904A573DBD503808CD2F8D8</PropertyValue><PropertyValue name="Item5.Name">Constructor</PropertyValue><PropertyValue name="Item5.UseDefaultName">true</PropertyValue><PropertyValue name="Item5.Tab">General</PropertyValue><PropertyValue name="Item5.TabID">General</PropertyValue><PropertyValue name="Item5.OriginalTabID">General</PropertyValue><PropertyValue name="Item5.OriginalTab">General</PropertyValue><PropertyValue name="Item5.RecordType">1</PropertyValue><PropertyValue name="Item5.Data">
+        public MainViewModel(
+            IFlowersService flowersService,
+            INavigationService navigationService)
+        {
+            _flowersService = flowersService;
+            _navigationService = navigationService;
+            Flowers = new ObservableCollection&lt;FlowerViewModel&gt;();
+        }
+</PropertyValue><PropertyValue name="Item5.Position">6</PropertyValue><PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item6.ID">778D4DB2BB9BD6188DB46C76EB68F7B1</PropertyValue><PropertyValue name="Item6.Name">-&gt; RefreshCommand</PropertyValue><PropertyValue name="Item6.UseDefaultName">true</PropertyValue><PropertyValue name="Item6.Tab">General</PropertyValue><PropertyValue name="Item6.TabID">General</PropertyValue><PropertyValue name="Item6.OriginalTabID">General</PropertyValue><PropertyValue name="Item6.OriginalTab">General</PropertyValue><PropertyValue name="Item6.RecordType">1</PropertyValue><PropertyValue name="Item6.Data">                        Flowers.Clear();
+
+                        _isLoading = true;
+                        RaisePropertyChanged(() =&gt; LastLoadedFormatted);
+
+                        Exception error = null;
+
+                        try
+                        {
+                            var list = await _flowersService.Refresh();
+
+                            foreach (var flower in list)
+                            {
+                                Flowers.Add(new FlowerViewModel(_flowersService, flower));
+                            }
+
+                            _isLoading = false;
+                            LastLoaded = DateTime.Now;
+                        }
+                        catch (Exception ex)
+                        {
+                            error = ex;
+                        }
+
+                        if (error != null)
+                        {
+                            var dialog = ServiceLocator.Current.GetInstance&lt;IDialogService&gt;();
+                            await dialog.ShowError(error, "Error when refreshing", "OK", null);
+                        }
+
+                        _isLoading = false;
+                        RaisePropertyChanged(() =&gt; LastLoadedFormatted);
+
+</PropertyValue><PropertyValue name="Item6.Position">7</PropertyValue><PropertyValue name="Item7.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item7.ID">7FA2B77703124330536E4770AD7B17AB</PropertyValue><PropertyValue name="Item7.Name">ShowDetailsCommand</PropertyValue><PropertyValue name="Item7.UseDefaultName">false</PropertyValue><PropertyValue name="Item7.Tab">General</PropertyValue><PropertyValue name="Item7.TabID">General</PropertyValue><PropertyValue name="Item7.OriginalTabID">General</PropertyValue><PropertyValue name="Item7.OriginalTab">General</PropertyValue><PropertyValue name="Item7.RecordType">1</PropertyValue><PropertyValue name="Item7.Data">
+        private RelayCommand&lt;FlowerViewModel&gt; _showDetailsCommand;
+
+        public RelayCommand&lt;FlowerViewModel&gt; ShowDetailsCommand
+        {
+            get
+            {
+                return _showDetailsCommand
+                       ?? (_showDetailsCommand = new RelayCommand&lt;FlowerViewModel&gt;(
+                           flower =&gt;
+                           {
+                               _navigationService.NavigateTo(ViewModelLocator.DetailsPageKey, flower);
+                           },
+                           flower =&gt; flower != null));
+            }
+        }
+</PropertyValue><PropertyValue name="Item7.Position">8</PropertyValue><PropertyValue name="Item8.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item8.ID">383C4C7B18036E4E4CB3CF32A7AE9FA0</PropertyValue><PropertyValue name="Item8.Name">---- MainActivity</PropertyValue><PropertyValue name="Item8.UseDefaultName">true</PropertyValue><PropertyValue name="Item8.Tab">General</PropertyValue><PropertyValue name="Item8.TabID">General</PropertyValue><PropertyValue name="Item8.OriginalTabID">General</PropertyValue><PropertyValue name="Item8.OriginalTab">General</PropertyValue><PropertyValue name="Item8.RecordType">1</PropertyValue><PropertyValue name="Item8.Data">        public ObservableCollection&lt;FlowerViewModel&gt; Flowers
+        {
+            get;
+            private set;
+        }
+
+</PropertyValue><PropertyValue name="Item8.Position">9</PropertyValue><PropertyValue name="Item9.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item9.ID">0C8671AD08D9AF60FDCC89BF8E12667A</PropertyValue><PropertyValue name="Item9.Name">Vm</PropertyValue><PropertyValue name="Item9.UseDefaultName">true</PropertyValue><PropertyValue name="Item9.Tab">General</PropertyValue><PropertyValue name="Item9.TabID">General</PropertyValue><PropertyValue name="Item9.OriginalTabID">General</PropertyValue><PropertyValue name="Item9.OriginalTab">General</PropertyValue><PropertyValue name="Item9.RecordType">1</PropertyValue><PropertyValue name="Item9.Data">        public MainViewModel Vm
+        {
+            get
+            {
+                return App.Locator.Main;
+            }
+        }
+
+</PropertyValue><PropertyValue name="Item9.Position">10</PropertyValue><PropertyValue name="Item10.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item10.ID">D0E478DBCBDFC8BF6EADE91645BBD6DB</PropertyValue><PropertyValue name="Item10.Name">UI RefreshButton</PropertyValue><PropertyValue name="Item10.UseDefaultName">true</PropertyValue><PropertyValue name="Item10.Tab">General</PropertyValue><PropertyValue name="Item10.TabID">General</PropertyValue><PropertyValue name="Item10.OriginalTabID">General</PropertyValue><PropertyValue name="Item10.OriginalTab">General</PropertyValue><PropertyValue name="Item10.RecordType">1</PropertyValue><PropertyValue name="Item10.Data">
+        private Button _refreshButton;
+
+        public Button RefreshButton
+        {
+            get
+            {
+                return _refreshButton
+                       ?? (_refreshButton = FindViewById&lt;Button&gt;(Resource.Id.RefreshButton));
+            }
+        }
+</PropertyValue><PropertyValue name="Item10.Position">11</PropertyValue><PropertyValue name="Item11.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item11.ID">76F210905DF2F1BE3FCBA5F581E438F1</PropertyValue><PropertyValue name="Item11.Name">RefreshButton Command</PropertyValue><PropertyValue name="Item11.UseDefaultName">true</PropertyValue><PropertyValue name="Item11.Tab">General</PropertyValue><PropertyValue name="Item11.TabID">General</PropertyValue><PropertyValue name="Item11.OriginalTabID">General</PropertyValue><PropertyValue name="Item11.OriginalTab">General</PropertyValue><PropertyValue name="Item11.RecordType">1</PropertyValue><PropertyValue name="Item11.Data">            RefreshButton.SetCommand(
+                "Click",
+                Vm.RefreshCommand);
+
+</PropertyValue><PropertyValue name="Item11.Position">12</PropertyValue><PropertyValue name="Item12.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item12.ID">77ABB2C61721DA63EFF432806E837CCB</PropertyValue><PropertyValue name="Item12.Name">_lastLoadedBinding</PropertyValue><PropertyValue name="Item12.UseDefaultName">true</PropertyValue><PropertyValue name="Item12.Tab">General</PropertyValue><PropertyValue name="Item12.TabID">General</PropertyValue><PropertyValue name="Item12.OriginalTabID">General</PropertyValue><PropertyValue name="Item12.OriginalTab">General</PropertyValue><PropertyValue name="Item12.RecordType">1</PropertyValue><PropertyValue name="Item12.Data">            _lastLoadedBinding = this.SetBinding(
+                () =&gt; Vm.LastLoadedFormatted,
+                () =&gt; LastLoadedText.Text);
+
+</PropertyValue><PropertyValue name="Item12.Position">13</PropertyValue><PropertyValue name="Item13.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item13.ID">A75B13AD2F5750FF059902E88FD8A6DF</PropertyValue><PropertyValue name="Item13.Name">FlowersList.Adapter</PropertyValue><PropertyValue name="Item13.UseDefaultName">true</PropertyValue><PropertyValue name="Item13.Tab">General</PropertyValue><PropertyValue name="Item13.TabID">General</PropertyValue><PropertyValue name="Item13.OriginalTabID">General</PropertyValue><PropertyValue name="Item13.OriginalTab">General</PropertyValue><PropertyValue name="Item13.RecordType">1</PropertyValue><PropertyValue name="Item13.Data">            FlowersList.Adapter = Vm.Flowers.GetAdapter(GetFlowerAdapter);
+            FlowersList.OnItemClickListener = this;
+
+</PropertyValue><PropertyValue name="Item13.Position">14</PropertyValue><PropertyValue name="Item14.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item14.ID">6180ED717CBABE9CE952DBDDAEA998A4</PropertyValue><PropertyValue name="Item14.Name">GetFlowerAdapter</PropertyValue><PropertyValue name="Item14.UseDefaultName">true</PropertyValue><PropertyValue name="Item14.Tab">General</PropertyValue><PropertyValue name="Item14.TabID">General</PropertyValue><PropertyValue name="Item14.OriginalTabID">General</PropertyValue><PropertyValue name="Item14.OriginalTab">General</PropertyValue><PropertyValue name="Item14.RecordType">1</PropertyValue><PropertyValue name="Item14.Data">        private View GetFlowerAdapter(int position, FlowerViewModel flower, View convertView)
+        {
+            // Not reusing views here
+            convertView = LayoutInflater.Inflate(Resource.Layout.FlowerTemplate, null);
+
+            var title = convertView.FindViewById&lt;TextView&gt;(Resource.Id.NameTextView);
+            title.Text = flower.Model.Name;
+
+            var desc = convertView.FindViewById&lt;TextView&gt;(Resource.Id.DescriptionTextView);
+            desc.Text = flower.Model.Description;
+
+            var image = convertView.FindViewById&lt;ImageView&gt;(Resource.Id.FlowerImageView);
+            ImageDownloader.AssignImageAsync(image, flower.Model.Image, this);
+
+            return convertView;
+        }
+
+</PropertyValue><PropertyValue name="Item14.Position">15</PropertyValue><PropertyValue name="Item15.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item15.ID">162CF1F0A4E84200941F8C8765DF7D18</PropertyValue><PropertyValue name="Item15.Name">OnItemClick</PropertyValue><PropertyValue name="Item15.UseDefaultName">true</PropertyValue><PropertyValue name="Item15.Tab">General</PropertyValue><PropertyValue name="Item15.TabID">General</PropertyValue><PropertyValue name="Item15.OriginalTabID">General</PropertyValue><PropertyValue name="Item15.OriginalTab">General</PropertyValue><PropertyValue name="Item15.RecordType">1</PropertyValue><PropertyValue name="Item15.Data">        // Implementing AdapterView.IOnItemClickListener
+        public void OnItemClick(AdapterView parent, View view, int position, long id)
+        {
+            Vm.ShowDetailsCommand.Execute(Vm.Flowers[position]);
+        }
+
+</PropertyValue><PropertyValue name="Item15.Position">16</PropertyValue><PropertyValue name="Item16.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item16.ID">383C4C7B18036E4E4CB3CF32A7AE9FA0</PropertyValue><PropertyValue name="Item16.Name">---- AddCommentActivity</PropertyValue><PropertyValue name="Item16.UseDefaultName">true</PropertyValue><PropertyValue name="Item16.Tab">General</PropertyValue><PropertyValue name="Item16.TabID">General</PropertyValue><PropertyValue name="Item16.OriginalTabID">General</PropertyValue><PropertyValue name="Item16.OriginalTab">General</PropertyValue><PropertyValue name="Item16.RecordType">1</PropertyValue><PropertyValue name="Item16.Data">        public ObservableCollection&lt;FlowerViewModel&gt; Flowers
+        {
+            get;
+            private set;
+        }
+
+</PropertyValue><PropertyValue name="Item16.Position">17</PropertyValue><PropertyValue name="Item17.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item17.ID">3C0B397E25B15E9C9CA804095398742E</PropertyValue><PropertyValue name="Item17.Name">Nav parameter</PropertyValue><PropertyValue name="Item17.UseDefaultName">true</PropertyValue><PropertyValue name="Item17.Tab">General</PropertyValue><PropertyValue name="Item17.TabID">General</PropertyValue><PropertyValue name="Item17.OriginalTabID">General</PropertyValue><PropertyValue name="Item17.OriginalTab">General</PropertyValue><PropertyValue name="Item17.RecordType">1</PropertyValue><PropertyValue name="Item17.Data">            // Retrieve navigation parameter and set as current "DataContext"
+            Vm = GlobalNavigation.GetAndRemoveParameter&lt;FlowerViewModel&gt;(Intent);
+
+</PropertyValue><PropertyValue name="Item17.Position">18</PropertyValue><PropertyValue name="Item18.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item18.ID">31BBAC3ED5D9459D28E25229FC967A77</PropertyValue><PropertyValue name="Item18.Name">SaveCommentButton.Command</PropertyValue><PropertyValue name="Item18.UseDefaultName">true</PropertyValue><PropertyValue name="Item18.Tab">General</PropertyValue><PropertyValue name="Item18.TabID">General</PropertyValue><PropertyValue name="Item18.OriginalTabID">General</PropertyValue><PropertyValue name="Item18.OriginalTab">General</PropertyValue><PropertyValue name="Item18.RecordType">1</PropertyValue><PropertyValue name="Item18.Data">            _saveBinding = this.SetBinding(
+                () =&gt; CommentText.Text);
+
+            SaveCommentButton.SetCommand(
+                "Click",
+                Vm.SaveCommentCommand,
+                _saveBinding);
+
+</PropertyValue><PropertyValue name="Item18.Position">19</PropertyValue><PropertyValue name="Item19.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item19.ID">383C4C7B18036E4E4CB3CF32A7AE9FA0</PropertyValue><PropertyValue name="Item19.Name">---- MainViewController</PropertyValue><PropertyValue name="Item19.UseDefaultName">true</PropertyValue><PropertyValue name="Item19.Tab">General</PropertyValue><PropertyValue name="Item19.TabID">General</PropertyValue><PropertyValue name="Item19.OriginalTabID">General</PropertyValue><PropertyValue name="Item19.OriginalTab">General</PropertyValue><PropertyValue name="Item19.RecordType">1</PropertyValue><PropertyValue name="Item19.Data">        public ObservableCollection&lt;FlowerViewModel&gt; Flowers
+        {
+            get;
+            private set;
+        }
+
+</PropertyValue><PropertyValue name="Item19.Position">20</PropertyValue><PropertyValue name="Item20.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item20.ID">77ABB2C61721DA63EFF432806E837CCB</PropertyValue><PropertyValue name="Item20.Name">_lastLoadedBinding</PropertyValue><PropertyValue name="Item20.UseDefaultName">true</PropertyValue><PropertyValue name="Item20.Tab">General</PropertyValue><PropertyValue name="Item20.TabID">General</PropertyValue><PropertyValue name="Item20.OriginalTabID">General</PropertyValue><PropertyValue name="Item20.OriginalTab">General</PropertyValue><PropertyValue name="Item20.RecordType">1</PropertyValue><PropertyValue name="Item20.Data">            _lastLoadedBinding = this.SetBinding(
+                () =&gt; Vm.LastLoadedFormatted,
+                () =&gt; LastLoadedText.Text);
+
+</PropertyValue><PropertyValue name="Item20.Position">21</PropertyValue><PropertyValue name="Item21.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item21.ID">E84CE6E8FAC96C55B2A8C21B0FF3446C</PropertyValue><PropertyValue name="Item21.Name">RefreshButton.Command</PropertyValue><PropertyValue name="Item21.UseDefaultName">true</PropertyValue><PropertyValue name="Item21.Tab">General</PropertyValue><PropertyValue name="Item21.TabID">General</PropertyValue><PropertyValue name="Item21.OriginalTabID">General</PropertyValue><PropertyValue name="Item21.OriginalTab">General</PropertyValue><PropertyValue name="Item21.RecordType">1</PropertyValue><PropertyValue name="Item21.Data">            RefreshButton.SetCommand(
+                "Clicked",
+                Vm.RefreshCommand);
+
+</PropertyValue><PropertyValue name="Item21.Position">22</PropertyValue><PropertyValue name="Item22.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item22.ID">B38DC8B4939AE5DC4F879504B084888B</PropertyValue><PropertyValue name="Item22.Name">_tableViewController</PropertyValue><PropertyValue name="Item22.UseDefaultName">true</PropertyValue><PropertyValue name="Item22.Tab">General</PropertyValue><PropertyValue name="Item22.TabID">General</PropertyValue><PropertyValue name="Item22.OriginalTabID">General</PropertyValue><PropertyValue name="Item22.OriginalTab">General</PropertyValue><PropertyValue name="Item22.RecordType">1</PropertyValue><PropertyValue name="Item22.Data">            _tableViewController = Vm.Flowers.GetController(
+                CreateFlowerCell,
+                BindFlowerCell);
+
+            _tableViewController.TableView = FlowersTableView;
+
+            _tableViewController.SelectionChanged +=
+                (s, e) =&gt; Vm.ShowDetailsCommand.Execute(_tableViewController.SelectedItem);
+
+</PropertyValue><PropertyValue name="Item22.Position">23</PropertyValue><PropertyValue name="Item23.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item23.ID">5318F6C0867864D8A038290ADEF5ECD2</PropertyValue><PropertyValue name="Item23.Name">CreateFlowerCell</PropertyValue><PropertyValue name="Item23.UseDefaultName">true</PropertyValue><PropertyValue name="Item23.Tab">General</PropertyValue><PropertyValue name="Item23.TabID">General</PropertyValue><PropertyValue name="Item23.OriginalTabID">General</PropertyValue><PropertyValue name="Item23.OriginalTab">General</PropertyValue><PropertyValue name="Item23.RecordType">1</PropertyValue><PropertyValue name="Item23.Data">        private UITableViewCell CreateFlowerCell(NSString reuseId)
+        {
+            var cell = new UITableViewCell(UITableViewCellStyle.Subtitle, null);
+            cell.TextLabel.TextColor = Application.Colors.HighlightColor;
+            return cell;
+        }
+
+</PropertyValue><PropertyValue name="Item23.Position">24</PropertyValue><PropertyValue name="Item24.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item24.ID">BA0D0F9A320E90DDB5A1EC7A8DABC0C3</PropertyValue><PropertyValue name="Item24.Name">BindFlowerCell</PropertyValue><PropertyValue name="Item24.UseDefaultName">true</PropertyValue><PropertyValue name="Item24.Tab">General</PropertyValue><PropertyValue name="Item24.TabID">General</PropertyValue><PropertyValue name="Item24.OriginalTabID">General</PropertyValue><PropertyValue name="Item24.OriginalTab">General</PropertyValue><PropertyValue name="Item24.RecordType">1</PropertyValue><PropertyValue name="Item24.Data">        private void BindFlowerCell(UITableViewCell cell, FlowerViewModel flower, NSIndexPath path)
+        {
+            cell.TextLabel.Text = flower.Model.Name;
+            cell.DetailTextLabel.Text = flower.Model.Description;
+            cell.ImageView.SetImage(
+                new NSUrl(flower.ImageUri.AbsoluteUri),
+                UIImage.FromBundle("flower_256_magenta.png"));
+        }
+
+</PropertyValue><PropertyValue name="Item24.Position">25</PropertyValue><PropertyValue name="Item25.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item25.ID">383C4C7B18036E4E4CB3CF32A7AE9FA0</PropertyValue><PropertyValue name="Item25.Name">---- MainPage.xaml</PropertyValue><PropertyValue name="Item25.UseDefaultName">true</PropertyValue><PropertyValue name="Item25.Tab">General</PropertyValue><PropertyValue name="Item25.TabID">General</PropertyValue><PropertyValue name="Item25.OriginalTabID">General</PropertyValue><PropertyValue name="Item25.OriginalTab">General</PropertyValue><PropertyValue name="Item25.RecordType">1</PropertyValue><PropertyValue name="Item25.Data">        public ObservableCollection&lt;FlowerViewModel&gt; Flowers
+        {
+            get;
+            private set;
+        }
+
+</PropertyValue><PropertyValue name="Item25.Position">26</PropertyValue><PropertyValue name="Item26.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item26.ID">1969D6090FB7FB5FA0EE10B670B7461F</PropertyValue><PropertyValue name="Item26.Name">ListView ItemsSource</PropertyValue><PropertyValue name="Item26.UseDefaultName">true</PropertyValue><PropertyValue name="Item26.Tab">General</PropertyValue><PropertyValue name="Item26.TabID">General</PropertyValue><PropertyValue name="Item26.OriginalTabID">General</PropertyValue><PropertyValue name="Item26.OriginalTab">General</PropertyValue><PropertyValue name="Item26.RecordType">1</PropertyValue><PropertyValue name="Item26.Data">ItemsSource="{Binding Flowers}"
+                  </PropertyValue><PropertyValue name="Item26.Position">27</PropertyValue><PropertyValue name="Item27.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item27.ID">BAE32ABE343A465BCF9C3122519BFE29</PropertyValue><PropertyValue name="Item27.Name">Label Text</PropertyValue><PropertyValue name="Item27.UseDefaultName">true</PropertyValue><PropertyValue name="Item27.Tab">General</PropertyValue><PropertyValue name="Item27.TabID">General</PropertyValue><PropertyValue name="Item27.OriginalTabID">General</PropertyValue><PropertyValue name="Item27.OriginalTab">General</PropertyValue><PropertyValue name="Item27.RecordType">1</PropertyValue><PropertyValue name="Item27.Data">Text="{Binding LastLoadedFormatted}"
+                   </PropertyValue><PropertyValue name="Item27.Position">28</PropertyValue><PropertyValue name="Item28.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item28.ID">F63A703B18D0DBC5C161B6FAE16FCBE5</PropertyValue><PropertyValue name="Item28.Name">Refresh Command</PropertyValue><PropertyValue name="Item28.UseDefaultName">true</PropertyValue><PropertyValue name="Item28.Tab">General</PropertyValue><PropertyValue name="Item28.TabID">General</PropertyValue><PropertyValue name="Item28.OriginalTabID">General</PropertyValue><PropertyValue name="Item28.OriginalTab">General</PropertyValue><PropertyValue name="Item28.RecordType">1</PropertyValue><PropertyValue name="Item28.Data">Command="{Binding RefreshCommand}"
+                </PropertyValue><PropertyValue name="Item28.Position">29</PropertyValue><PropertyValue name="ItemCount">29</PropertyValue></Category></Category></UserSettings>
