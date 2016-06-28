@@ -2,7 +2,7 @@
 
 My code samples for the bbv company event 2015 (Lucerne, Switzerland)
 
-# Presentation details, Slides, Video
+# Presentation details, Slides
 
 You can see the details and the slides here:
 
